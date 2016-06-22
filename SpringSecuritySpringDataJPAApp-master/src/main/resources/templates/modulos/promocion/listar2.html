@@ -1,0 +1,68 @@
+<html layout:decorator="master">
+
+	<div layout:fragment="content">
+	<!-- 	    <div th:each="promo : ${promociones}" class="row" style="border-bottom-style:solid;"	>
+                <div class="col-xs-6 col-md-3"> 
+                    <a href="#" class="thumbnail"> 
+                        <img th:attr="src=@{${promo.imagen}}"/> 
+                    </a>                     
+                </div>
+                <div class="col-md-4">
+                    <h6>Descuento</h6>
+                    <h6 th:text="${promo.porcentajeDescuentoPromocion}+'% Descuento'"></h6>
+                    <h6>Descripcion</h6>
+                    <br/>
+                   <input type="hidden" name="id_promo">
+                    <a class="btn btn-default" th:href="@{'/promocion/{id}/form_promocion'(id=${promo.idPromocion})}" role="button">Reservar</a>
+                    
+						
+                                        
+                </div>
+            </div> -->
+            
+    <!--         -->
+   	 <div class="container-fluid">
+    	<form action="/reserva/promocion" th:each="promo : ${promociones}" method="post">
+    	
+    	<hr/>
+    	 <div class="row thumbnail">
+            <input type="hidden" name="idPromocion" th:value="${promo.idPromocion}"/>
+            <div  class="row"	>
+            <div class="col-md-7">
+               <a href="#" class=""> <img th:attr="src=@{${promo.imagen}}"/></a> 
+            </div>
+            <div class="col-md-5">
+                    <h6>Descuento</h6>
+                    <h6 th:text="${promo.porcentajeDescuentoPromocion}+'% Descuento'"></h6>
+                    <p><h6>Descripcion</h6></p>
+                    <button type="submit" class="btn btn-primary">Reservar</button>
+                 	
+            </div>
+        </div>
+        </div> 
+     
+         </form> 
+       </div> 
+       <hr/>
+        <!--  -->
+           
+	
+			   <!--   <div th:each="promo : ${promociones}" class="row" style="border-bottom-style:solid;" th:if="${promo.idPromocion%2!=0}">
+                <div class="col-md-4 col-sm-offset-5 text-right">
+                   <h6>Descuento</h6>
+                    <h6 th:text="${promo.porcentajeDescuentoPromocion}+'% Descuento'"></h6>
+                    <h6>Descripcion</h6>
+                    <br/>
+                    <a class="btn btn-default" th:href="@{'/promocion/{id}/form_promocion'(id=${promo.idPromocion})}" role="button">Reservar</a>
+                                       
+                </div>
+                <div class="col-xs-6 col-md-3" > 
+                    <a href="#" class="thumbnail"> 
+                        <img th:attr="src=@{${promo.imagen}}"/> 
+                    </a>                      
+                </div>
+            </div> -->
+	
+	
+	</div>	
+</html>

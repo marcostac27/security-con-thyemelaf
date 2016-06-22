@@ -1,0 +1,13 @@
+<html layout:decorator="master">
+	<div layout:fragment="content">
+		<form method="post" name="pais_form" id="pais_form" action="/paises/update" role="form">
+			<div class="form-group">
+				<label for="nombrePais">Id:</label>
+				<textarea rows="1" class="form-control" id="idPais" name="idPais" readonly="readonly" th:text="${id}"></textarea>
+				<label for="nombrePais">Nombre:</label>
+				<textarea rows="1" class="form-control" id="nombrePais" name="nombrePais"></textarea>
+			</div>
+			<button type="submit" id="submit" class="btn btn-primary">Guardar</button>
+		</form>	
+	</div>	
+</html>

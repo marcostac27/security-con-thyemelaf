@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="css/app.css"  rel="stylesheet"/>
+          type="text/css">
+    <title>Hello World!</title>
+</head>
+<body class="security-app">
+<div class="details">
+
+    <h2>Spring Security - JDBC Authentication</h2>
+    <a href="http://www.programming-free.com/2016/01/spring-security-spring-data-jpa.html" class="button green small">Tutorial</a>
+    <a href="https://github.com/priyadb/SpringSecurityJdbcApp/archive/master.zip"
+       class="button red small">Download</a>
+</div>
+
+<div class="lc-block">
+    <h1>
+        Hello <b sec:authentication="name"></b>
+    </h1>
+    <form action="/logout" method="post">
+        <input type="submit" class="button red big" value="Sign Out"/>
+        <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"/>
+    </form>
+</div>
+
+</body>
+</html>

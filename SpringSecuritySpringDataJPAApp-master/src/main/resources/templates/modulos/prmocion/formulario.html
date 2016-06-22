@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content=""/>
+        <meta name="author" content=""/>
+        <title>Navbar Template for Bootstrap</title>
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet"/>
+        <!-- Custom styles for this template -->
+        <link href="navbar.css" rel="stylesheet"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="/calendario/js/bootstrap-datepicker.js"></script>
+        <link rel="stylesheet" href="/calendario/css/datepicker.css"/>
+       
+       <script type="text/javascript"></script>
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"/>
+    </head>
+    <body>
+        <div class="container">
+            <!-- Static navbar -->
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Project name</a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active">
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">Action</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Another action</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Something else here</a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li class="dropdown-header">Nav header</li>
+                                    <li>
+                                        <a href="#">Separated link</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">One more separated link</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active">
+                                <a href="./">Default <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li>
+                                <a href="../navbar-static-top/">Static top</a>
+                            </li>
+                            <li>
+                                <a href="../navbar-fixed-top/">Fixed top</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+                <!--/.container-fluid -->
+            </nav>
+            <div style="border-bottom-style:solid; border-left-style:solid;" class="container navbar">
+                <label class="control-label">Email address</label>
+                <h1 class="text-center">Formulario Promocion</h1>
+                <form role="form" class="form-horizontal">
+                    <div class="row" style=" border-top-style:solid;">
+                        <div class="col-md-6 col-sm-6 text-left" id="Columna izquierda_principal" style=" border-right-style:solid;">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12">
+                                    <h3 class="text-left">Registro Alojamiento</h3>
+                                    <div class="form-group">
+                                        <label class="control-label   text-left                                       col-sm-4">
+                                            <p class="text-left">Ingreso:</p>
+                                        </label>
+                                        <div class="col-sm-8">
+                                            <div class=" input-group input-append date " id="dpd1" data-date="2013-02-21T15:25:00Z">
+                                                <input type="text" class="form-control" value="" id="ingreso_fec" name="ingreso_fec" />
+                                                <span class="add-on input-group-addon"><span class="icon-calendar glyphicon glyphicon-calendar "></span></span>
+                                            </div>
+                                        </div>                                         
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label   text-left                                       col-sm-4">
+                                            <p class="text-left">salida:</p> 
+                                        </label>
+                                        <div class="col-sm-8"> 
+                                            <div class=" input-group input-append date " id="dpd2" data-date="2013-02-21T15:25:00Z">
+                                                <input type="text" class="form-control" value="" id="salida_fec" name="salida_fec" />
+                                                <span class="add-on input-group-addon"><span class="icon-calendar glyphicon glyphicon-calendar "></span></span>
+                                            </div>
+                                        </div>                                         
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label   text-left                                       col-sm-4">
+                                            <p class="text-left">Tipo Habitacion:</p>
+                                        </label>
+                                        <div class="col-sm-8">
+                                            <select class="form-control" name="tipo_habitacion" id="tipo_habitacion"> 
+                                                <option selected="select" value="1">chica</option>
+                                                <option value="2">mediana</option>
+                                                <option value="3">Grande</option>
+                                                <option value="4">Vip</option>
+                                                <option value="5">Penthouse</option>                                                 
+                                            </select>                                             
+                                            <!-- <input type="Text" class="form-control" id="tipo_habitacion" name="tipo_habitacion2" /> -->
+                                        </div>                                         
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label   text-left                                       col-sm-4">
+                                            <p class="text-left">Camas:</p> 
+                                        </label>
+                                        <div class="col-sm-8"> 
+                                            <!--                                             <input type="Text" class="form-control" id="camas" name="camas2" />
+ -->                                             
+                                            <label class="control-label" title=""> 
+                                                <input type="radio" name="radioGroup" id="cama_twin" checked="checked" /> 
+                                                Ejcutiva                                          
+                                            </label>
+                                            <label class="control-label" title="matrimonio">
+                                                <input type="radio" name="radioGroup" id="cama_matrimonio" />                                                         Standard        
+                                            </label>
+                                            <label class="control-label" title=""> 
+                                                <input type="radio" name="radioGroup" id="cama_twin" checked="checked" /> 
+                                                Matrimonial                                          
+                                            </label>
+                                            <label class="control-label" title="matrimonio">
+                                                <input type="radio" name="radioGroup" id="cama_matrimonio" />                                                         Precidencial        
+                                            </label>
+                                            <label class="control-label" title=""> 
+                                                <input type="radio" name="radioGroup" id="cama_twin" checked="checked" /> 
+                                                Vibradora                                          
+                                            </label>
+                                            <!--      <label class="control-label" title="matrimonio">
+                                                <input type="radio" name="radioGroup" id="cama_matrimonio" />                                                         Matrimonio        
+                                            </label>
+                                                <label class="control-label" title=""> 
+                                                <input type="radio" name="radioGroup" id="cama_twin" checked="checked" /> 
+                                                Twin                                          
+                                            </label>
+                                            <label class="control-label" title="matrimonio">
+                                                <input type="radio" name="radioGroup" id="cama_matrimonio" />                                                         Matrimonio        
+                                            </label>
+                                                <label class="control-label" title=""> 
+                                                <input type="radio" name="radioGroup" id="cama_twin" checked="checked" /> 
+                                                Twin                                          
+                                            </label>
+                                            <label class="control-label" title="matrimonio">
+                                                <input type="radio" name="radioGroup" id="cama_matrimonio" />                                                         Matrimonio        
+                                            </label> -->
+                                        </div>                                         
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label   text-left                                col-sm-4">
+                                            <p class="text-left">Adultos:</p> 
+                                        </label>
+                                        <div class="col-sm-8">
+                                            <select class="form-control" id="adultos" name="adultos"> 
+                                                <option value="1" selected="selected">1</option>                                                 
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                            </select>                                             
+                                        </div>                                         
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label   text-left                                       col-sm-4">
+                                            <p class="text-left">Niños:</p> 
+                                        </label>
+                                        <div class="col-sm-8">
+                                            <select class="form-control" id="ninos" name="ninos"> 
+                                                <option value="1" selected="selected">1</option>                                                 
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                            </select>                                             
+                                        </div>                                         
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label                                         col-sm-4">
+                                            <p class="text-left">ServicioExtras:</p> 
+                                        </label>
+                                        <div class="col-sm-8"> 
+                                            <input type="Text" class="form-control" id="servicios_extras" name="servicios_extras" />
+                                        </div>                                         
+                                    </div>                                     
+                                </div>
+                            </div>
+                            <div class="row" id="Columna izquierda_principal_fila2">
+                                <div id="Columna izquierda_fila2_columna_1" class="col-sm-12 col-md-12">
+                                    <h3>Registro_person</h3>
+                                    <div class="form-group">
+                                        <label class="control-label   text-left                                       col-sm-4">
+                                            <p class="text-left">Nombre:</p> 
+                                        </label>
+                                        <div class="col-sm-8"> 
+                                            <input type="Text" class="form-control" id="nombre" name="nombre" />
+                                        </div>                                         
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label   text-left                                       col-sm-4">
+                                            <p class="text-left">Apellido Paterno:</p> 
+                                        </label>
+                                        <div class="col-sm-8"> 
+                                            <input type="Text" class="form-control" id="apellido_pat" name="apellido_pat" />
+                                        </div>                                         
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label   text-left                                       col-sm-4">
+                                            <p class="text-left">Apellido Materno:</p> 
+                                        </label>
+                                        <div class="col-sm-8"> 
+                                            <input type="Text" class="form-control" id="apellido_mat" name="apellido_mat" />
+                                        </div>                                         
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label   text-left                                       col-sm-4">
+                                            <p class="text-left">Rut o pasaporte:</p> 
+                                        </label>
+                                        <div class="col-sm-8"> 
+                                            <input type="Text" class="form-control" id="RUT" name="rut" />
+                                        </div>                                         
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label                                         col-sm-4" style="padding-right:0px;">
+                                            <p class="text-left">Fecha Nacimiento:</p> 
+                                        </label>
+                                        <div class="col-sm-8"> 
+                                            <div class=" input-group input-append date " id="dpd3" data-date="2013-02-21T15:25:00Z">
+                                                <input type="text" class="form-control" value="" id="fecha_nac" name="fecha_nac" />
+                                                <span class="add-on input-group-addon"><span class="icon-calendar glyphicon glyphicon-calendar "></span></span>
+                                            </div>
+                                        </div>                                         
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label   text-left                                       col-sm-4">
+                                            <p class="text-left">Direccion:</p> 
+                                        </label>
+                                        <div class="col-sm-8"> 
+                                            <input type="Text" class="form-control" id="direc" name="direc" />
+                                        </div>                                         
+                                    </div>                                     
+                                </div>
+                            </div>
+                            <div class="row" id="Columna izquierda_principal_fila3">
+                                <div id="Columna izquierda_principal_fila2_columna1" class="col-md-12 col-sm-12" style="border-bottom-style">
+                                    <h3 class="text-left">Pago Garantía</h3>
+                                    <div class="form-group">
+                                        <label class="control-label   text-left                                       col-sm-4">
+                                            <p class="text-left">Nombres:</p> 
+                                        </label>
+                                        <div class="col-sm-8"> 
+                                            <input type="Text" class="form-control" id="nombre_garantia" name="nombre_garantia" />
+                                        </div>                                         
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label   text-left                                       col-sm-4">
+                                            <p class="text-left">Tarjeta:</p> 
+                                        </label>
+                                        <div class="col-sm-8"> 
+                                            <input type="Text" class="form-control" id="tarjeta" name="tarjeta" />
+                                        </div>                                         
+                                    </div>                                     
+                                </div>
+                            </div>                             
+                        </div>
+                        <div class="col-md-6 col-sm-6" id="columna_derecha_principal">
+                            <div class="row" id="columna_derecha_principal_fila1" style="border-bottom-style:solid;border-right-style:solid;">
+                                <div class="col-sm-6 col-md-6" id="columna_derecha_principal_fila1_columna1">
+                                    <div class="col-xs-6 col-md-12 col-sm-12"> 
+                                        <a href="#" class="thumbnail"> 
+                                            <img src="file:///Applications/Pinegrow%20Web%20Designer.app/Contents/Resources/app.nw/placeholders/img4.jpg" alt="" /> 
+                                        </a>                                         
+                                    </div>                                     
+                                </div>
+                                <div class="col-md-4" id="columna_derecha_principal_fila1_columna2">
+                                    <h3>Descuento 25%</h3>
+                                    <p>Descripcion Promocion</p>
+                                </div>
+                            </div>
+                            <div class="row" id="columna_derecha_principal_fila2">
+                                <h4 class="text-center">Servicios Extras</h4>
+                                <div class="col-sm-12 col-md-12">
+                                    <table class="table"> 
+                                        <thead> 
+                                            <tr> 
+                                                <!-- <th>#</th> 
+                                                <th>First Name</th> 
+                                                <th>Last Name</th> 
+                                                <th>Username</th>  -->
+                                            </tr>                                             
+                                        </thead>                                         
+                                        <tbody> 
+                                            <tr> 
+                                                <!-- <td>1</td> 
+                                                <td>Mark</td> 
+                                                <td>Otto</td> 
+                                                <td>@mdo</td>  -->
+                                            </tr>                                             
+                                            <tr> 
+                                                <!-- <td>2</td> 
+                                                <td>Jacob</td> 
+                                                <td>Thornton</td> 
+                                                <td>@fat</td>  -->
+                                            </tr>                                             
+                                            <tr> 
+                                                <!-- <td>3</td> 
+                                                <td>Larry</td> 
+                                                <td>the Bird</td> 
+                                                <td>@twitter</td>  -->
+                                            </tr>                                             
+                                        </tbody>
+                                    </table>                                     
+                                </div>
+                            </div>                             
+                        </div>
+                    </div>                     
+                </form>
+            </div>
+            <!-- Main component for a primary marketing message or call to action -->
+        </div>         
+        <!-- /container -->
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster  <script th:inline="javascript"> -->
+     <!-- <script th:inline="javascript"> --> 
+        <script>
+
+/*<![CDATA[*/
+        var nowTemp = new Date();
+var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+ 
+var checkin = $('#dpd1').datepicker({
+  onRender: function(date) {
+    return date.valueOf() < now.valueOf() ? 'disabled' : '';
+  }
+}).on('changeDate', function(ev) {
+  if (ev.date.valueOf() > checkout.date.valueOf()) {
+    var newDate = new Date(ev.date)
+    newDate.setDate(newDate.getDate() + 1);
+    checkout.setValue(newDate);
+  }
+
+
+  checkin.hide();
+
+
+  $('#dpd2')[0].focus();
+}).data('datepicker');
+var checkout = $('#dpd2').datepicker({
+  onRender: function(date) {
+    return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
+  }
+}).on('changeDate', function(ev) {
+  checkout.hide();
+}).data('datepicker');
+
+var Xmas = new Date('March 1, 1900 00:00:00');
+var year = Xmas.getYear();
+var nac = $('#dpd3').datepicker({
+  onRender: function(date) {
+    return date.valueOf() < Xmas.valueOf() ? 'disabled' : '';
+  }
+}).on('changeDate', function(ev) {
+  if (ev.date.valueOf() > Xmas.valueOf()) {
+    return  'disabled';
+  }else{
+
+    return '';
+  }
+});
+
+
+
+    /*]]>*/
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="assets/js/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<html layout:decorator="master">
+	<div layout:fragment="content">
+		<a class="btn btn-primary" href="paises/new">Agregar nuevo pais</a>		
+		<table class="table table-striped" id="pais_list">
+			<thead>
+			<tr>
+				<th>Paises</th>
+				<th>Borrar</th>
+				<th></th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr data-th-each="pais : ${paises}">
+				<td class="nombrePais" data-th-text="${pais.nombrePais}"></td>
+				
+				<td>
+							<!-- Falló debido a que falta direccionar a viewController "posts" -->
+	<!-- 			<a th:href="@{'/{id}/delete'(id=${pais.idPais})}" class="delete" th:attr="name=${pais.nombrePais}"> -->
+					<a th:href="@{'/paises/{id}/delete'(id=${pais.idPais})}" class="delete" th:attr="name=${pais.idPais}">
+						<span class="fa-stack">
+							<i class="glyphicon glyphicon-trash"></i>
+						</span>			
+					</a>
+				</td>			
+				<td>
+					<a th:href="@{'/paises/{id}/edit'(id=${pais.idPais})}" class="edit" th:attr="name=${pais.idPais}">
+						<span class="fa-stack">
+							<i class="glyphicon glyphicon-edit"></i>
+						</span>			
+					</a>
+				</td>
+			</tr>
+			</tbody>
+		
+		</table>
+	</div>
+</html>
+
